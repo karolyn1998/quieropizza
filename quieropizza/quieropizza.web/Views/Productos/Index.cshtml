@@ -1,0 +1,15 @@
+﻿@model List<quieropizza.web.Models.ProductoModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Productos</h2>
+
+
+@foreach (var Producto in Model)
+{
+    <p> @Producto.Id @Producto.Descripcion</p>
+
+}
+
+
